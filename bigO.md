@@ -4,12 +4,19 @@ f(x) = O(g(x))
 
 **Notation**|**Name**
 O(1)		Constant
+
 O(logn)		Logarithmic
+
 O(log n^c)	Polylogorithmic
+
 O(n)		Linear
+
 O(n^2)		Quadratic
+
 O(n^c)		Polynomial
+
 O(c^n)		Exponential
+
 
 Note that O(c^n) grows faster than O (n^c)
 
