@@ -49,18 +49,18 @@ Therefore 4n^2 is worst case.
 
 Determining Complexities 
 * Sequence of Statements
-*     Total time is found by time for all statements
-*     If each statement is "simple" then total time is O(1)
+    *    Total time is found by time for all statements
+    *     If each statement is "simple" then total time is O(1)
 * if/else statements
-*     Either block 1 or block 2 will execute
-*     Worst case time is the slower of two possibilities
-*     e.g. if block 1 takes O(1) time and block 2 takes O(n) time, then it is O(n)
+    *     Either block 1 or block 2 will execute
+    *     Worst case time is the slower of two possibilities
+    *     e.g. if block 1 takes O(1) time and block 2 takes O(n) time, then it is O(n)
 * Loops
-*     Loop executes n times
-*     If statements within loop are O(1) then total time is O(n)
+    *     Loop executes n times
+    *     If statements within loop are O(1) then total time is O(n)
 * Nested Loops
-*     If both loops execute n times, O(n^2)
-*     else, O(n*m) where 1st loop executes n times and 2nd loop executes m times
+    *     If both loops execute n times, O(n^2)
+    *     else, O(n*m) where 1st loop executes n times and 2nd loop executes m times
 
 
 
