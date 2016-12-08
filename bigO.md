@@ -3,6 +3,7 @@
 f(x) = O(g(x))
 
 **Notation**|**Name**
+
 O(1)		Constant
 
 O(logn)		Logarithmic
