@@ -59,6 +59,7 @@ x = PP' = [3 - 1, 1 - 2, 3 - (-2)] = [2, -1, 5]
 l = [1, 2, -2] + t[2,-1,5]
 
 **Planes**
+
 a = sx + ty
 
 Given three distinct points P<sub>1</sub>, P<sub>2</sub>, P<sub>3</sub> in E<sup>3</sup>
