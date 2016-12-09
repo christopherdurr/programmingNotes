@@ -1,11 +1,11 @@
 #Chapter 1
 ## Vectors and Products
 
-A plane vector x in R<sup>2</sup> has the representation 
+A plane vector x in ℝ<sup>2</sup> has the representation 
 
 x = x<sub>1</sub>i + x<sub>2</sub>j. 
 
-A space vector y in R<sup>3</sup> has the representation
+A space vector y in ℝ<sup>3</sup> has the representation
 
 y = y<sub>1</sub>i + y<sub>2</sub>i + y<sub>3</sub>k
 
