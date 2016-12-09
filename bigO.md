@@ -26,7 +26,7 @@ f(x) = O(g(x))
 Note that O(c<sup>n</sup>)) grows faster than O (n<sup>c</sup>))
 
 * A function that grows faster than a power of n is **superpolynomial**
-* A function slower than c<sup>n</sup>) is **subexponential**
+* A function slower than c<sup>n</sup> is **subexponential**
 * e.g. Integer Factorization is both superpolynomial and subexponential
 
 When given multiple terms, use the term that grows the fastest
