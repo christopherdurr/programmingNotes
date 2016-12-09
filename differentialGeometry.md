@@ -51,7 +51,7 @@ y<sub>1</sub> y<sub>2</sub> y<sub>3</sub>
 
 x cross y = |x||y|sin(u)lines
 #Chapter 2
-##Description of Lines and Planes HC
+##Description of Lines and Planes
 **Parameterization**
 
 Definition
