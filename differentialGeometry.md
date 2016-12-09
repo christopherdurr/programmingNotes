@@ -54,6 +54,7 @@ Given a point P in E and a non-zero vector x in ℝ, the line through P with par
 l = P + ty
 
 Example
+
 A parametrization for line l through P[1,2,-2] and P'[3,1,3] is 
 x = PP' = [3 - 1, 1 - 2, 3 - (-2)] = [2, -1, 5] 
 l = [1, 2, -2] + t[2,-1,5]
