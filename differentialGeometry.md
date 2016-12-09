@@ -49,7 +49,7 @@ x<sub>1</sub> x<sub>2</sub> x<sub>3</sub>
 
 y<sub>1</sub> y<sub>2</sub> y<sub>3</sub>
 
-x cross y = |x||y|sin(u)lines
+x cross y = |x||y|sin(u)
 #Chapter 2
 ##Description of Lines and Planes
 **Parameterization**
