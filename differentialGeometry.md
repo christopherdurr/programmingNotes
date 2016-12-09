@@ -1,6 +1,11 @@
 #Chapter 1
 ## Vectors and Products
 
+
+A plane vector x in ℝ<sup>2</sup> has the representation 
+
+x = x<sub>1</sub>i + x<sub>2</sub>j. 
+
 A plane vector x in ℝ<sup>2</sup> has the representation 
 
 x = x<sub>1</sub>i + x<sub>2</sub>j. 
@@ -26,11 +31,15 @@ Given points P and Q where P = [x<sub>1</sub>, x<sub>2</sub>, x<sub>3</sub>] and
 
 Vector PQ = [y<sub>1</sub> - x<sub>1</sub>, y<sub>2</sub> - x<sub>2</sub>, y<sub>3</sub>- x<sub>3</sub>]
 
+
 Length of vector X is defined as |x| = sqrt(x<sub>1</sub><sup>2</sup> + x<sub>2</sub><sup>2</sup>)
 
-Let u be the angle between vectors x and y. x*y = |x||y|cos(u)
+
+Let u be the angle between vectors x and y. x dot y = |x||y|cos(u)
 
 Two vectors are perpendicular if the dot product of x and y = 0
+
+Cross Product of x and y is the determinant of [i j k; x1 x2 x3; y1 y2 y3]
 
 Cross Product of x and y is the determinant of 
 
@@ -40,27 +49,21 @@ x<sub>1</sub> x<sub>2</sub> x<sub>3</sub>
 
 y<sub>1</sub> y<sub>2</sub> y<sub>3</sub>
 
-x cross y = |x||y|sin(u)
-
+x cross y = |x||y|sin(u)lines
 #Chapter 2
 ##Description of Lines and Planes HC
-
 **Parameterization**
 
 Definition
 
 Given a point P in E and a non-zero vector x in ℝ, the line through P with parallel vector x consists of all points Q in E with PQ in span(x)
 
-l = P + ty
-
 Example
 
-A parametrization for line l through P[1,2,-2] and P'[3,1,3] is 
-x = PP' = [3 - 1, 1 - 2, 3 - (-2)] = [2, -1, 5] 
+A parametrization for line l through P[1,2,-2] and P'[3,1,3] is x = PP' = [3 - 1, 1 - 2, 3 - (-2)] = [2, -1, 5]
 l = [1, 2, -2] + t[2,-1,5]
 
 **Planes**
-
 a = sx + ty
 
 Given three distinct points P<sub>1</sub>, P<sub>2</sub>, P<sub>3</sub> in E<sup>3</sup>
@@ -79,5 +82,60 @@ In this case determine if there is a solution for the following:
 [0,-3,3] = s[1,1,0] + t[2,1,1]
 
 We can use gaussian reduction to discover there is indeed a solution, and Q is in a. 
+
+**Equations**
+
+Assume there is a line l in plane E<sup>2</sup> with parallel vector x. A vector n /= 0 is a *normal vector* to l if it is orthogonal to x. i.e. n dot x = 0
+
+Example
+
+We are given P<sub>1</sub> = [2,5]and P<sub>2</sub> = [-1,4]
+
+x = P<sub>1</sub>P<sub>2</sub> = [-3, 1]
+
+n = xhat = [1, -3]
+
+n dot P<sub>1</sub> = -13
+
+The line l can be described as the equation x - 3y = -13
+
+Example 
+
+**Planes**
+
+Assume we have P<sub>1</sub>, P<sub>2</sub>, P<sub>3</sub> in E<sup>3</sup>
+
+To derive an equation which determines plane a containing these three points:
+
+Let OQ = [x,y,z], OP<sub>i</sub> = [x<sub>i</sub>, y<sub>i</sub>, z<sub>1</sub>]
+
+Then x = P<sub>1</sub>P<sub>2</sub> = [x<sub>2</sub>-x<sub>1</sub>, y<sub>2</sub>-y<sub>1</sub>, z<sub>2</sub>-z<sub>1</sub>]
+
+y = P<sub>1</sub>P<sub>3</sub> = [x<sub>3</sub>-x<sub>1</sub>, y<sub>3</sub>-y<sub>1</sub>,z<sub>3</sub>-<sub>1</sub>]
+
+P<sub>1</sub>Q = [x-x<sub>1</sub>, y-y<sub>1</sub>, z-z<sub>1</sub>]
+
+solve [x,y,P<sub>1</sub>Q] = 0 
+
+**Several Lines**
+There are three cases:
+
+1. x and y are linearly independent. This yields an answer to the matrix [A|PP']
+2. x and y are parallel, but x and PP' are linearly independent. In this case, [A|PP']reduces to a matrix where the second row is [00|t] where t /= 0. *i.e. the matrix has no solution*
+3. x,y, and PP' are parallel. In this case, [A|PP'] is reduced so that the second row is [00|0]
+
+EXAMPLE
+
+P=[5, -1], P'=[-7,3], x = [1,-2], y = [3,-7]
+
+Then A = [x,y]
+
+[A|PP'] = [1 3; -2 -7] = [-12;4]
+
+Gaussian elimination gets us [1 0; 0 1] = [-72; 20] = s<sub>Q</sub>x
+
+The point of intersection Q is OP + s<sub>Q</sub>x, or [5,-1] + [-72, 144] = [-67, 143]
+
+
 
 
