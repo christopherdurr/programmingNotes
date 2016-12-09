@@ -12,7 +12,7 @@ However, there is a huge potential for gamification as it may motivate students 
     * **Cognition**
     * Games allow players to explore through experimentation and discovery
     * Games deliver concrete challengs that are perfectly tailored to the player's skill level
-    * ** Emotional**
+    * **Emotional**
     * Gamification provides students with immediate rewards as opposed to vague, long-term benefits
     * Games help players persist through negative emotional experiences and even transform them into positive ones
     * In games, you fail quickly and repeatedly until you succeed. In school, however, failure is high stakes
