@@ -1,13 +1,6 @@
 #Chapter 1
 ## Vectors and Products
 
-
-A plane vector x in ℝ<sup>2</sup> has the representation 
-
-x = x<sub>1</sub>i + x<sub>2</sub>j. 
-
-A space vector y in ℝ<sup>3</sup> has the representation
-
 A plane vector x in ℝ<sup>2</sup> has the representation 
 
 x = x<sub>1</sub>i + x<sub>2</sub>j. 
@@ -27,23 +20,15 @@ DEFINITIONS
 * The set of all linear combinations of a set of vectors is their span
 * A set of vectors is linearly dependent if the zero vector is expressible as a non-trivial linear combination of the vectors in set
 * Two non-zero vectors x and y are linearly dependent iff they are *parallel*. i.e. there exists a constant c where y = cx
- * Three non-zero vectors x,y, and z are linearly dependent iff they are *coplanar*. i.e. if x and y are parallel or there exist constants b and c such that z = bx + cy
+* Three non-zero vectors x,y, and z are linearly dependent iff they are *coplanar*. i.e. if x and y are parallel or there exist constants b and c such that z = bx + cy
 
 Given points P and Q where P = [x<sub>1</sub>, x<sub>2</sub>, x<sub>3</sub>] and Q = [y<sub>1</sub>, y<sub>2</sub>, y<sub>3</sub>]
 
 Vector PQ = [y<sub>1</sub> - x<sub>1</sub>, y<sub>2</sub> - x<sub>2</sub>, y<sub>3</sub>- x<sub>3</sub>]
 
-
 Length of vector X is defined as |x| = sqrt(x<sub>1</sub><sup>2</sup> + x<sub>2</sub><sup>2</sup>)
 
-
 Let u be the angle between vectors x and y. x*y = |x||y|cos(u)
-
-Two vectors are perpendicular if the dot product of x and y = 0
-
-Cross Product of x and y is the determinant of [i j k; x1 x2 x3; y1 y2 y3]
-
-Let u be the angle between vectors x and y  x dot y = |x||y|cos(u)
 
 Two vectors are perpendicular if the dot product of x and y = 0
 
@@ -55,18 +40,22 @@ x<sub>1</sub> x<sub>2</sub> x<sub>3</sub>
 
 y<sub>1</sub> y<sub>2</sub> y<sub>3</sub>
 
-x cross y = |x||y|sin(u)lines
+x cross y = |x||y|sin(u)
+
 #Chapter 2
 ##Description of Lines and Planes HC
+
 **Parameterization**
 
 Definition
 
 Given a point P in E and a non-zero vector x in ℝ, the line through P with parallel vector x consists of all points Q in E with PQ in span(x)
 
-Example
+l = P + ty
 
-A parametrization for line l through P[1,2,-2] and P'[3,1,3] is x = PP' = [3 - 1, 1 - 2, 3 - (-2)] = [2, -1, 5]
+Example
+A parametrization for line l through P[1,2,-2] and P'[3,1,3] is 
+x = PP' = [3 - 1, 1 - 2, 3 - (-2)] = [2, -1, 5] 
 l = [1, 2, -2] + t[2,-1,5]
 
 **Planes**
