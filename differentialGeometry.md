@@ -33,7 +33,12 @@ Let u be the angle between vectors x and y  x dot y = |x||y|cos(u)
 
 Two vectors are perpendicular if the dot product of x and y = 0
 
-Cross Product of x and y is the determinant of [i j k; x<sub>1</sub> x<sub>2</sub> x<sub>3</sub>; y<sub>1</sub> y<sub>2</sub> y<sub>3</sub>]
+Cross Product of x and y is the determinant of 
+i j k
+
+x<sub>1</sub> x<sub>2</sub> x<sub>3</sub> 
+
+y<sub>1</sub> y<sub>2</sub> y<sub>3</sub>
 
 x cross y = |x||y|sin(u)lines
 #Chapter 2
