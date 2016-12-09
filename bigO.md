@@ -1,29 +1,33 @@
-#Big O Notation is also known as Landau's Symbol
+#Big O Notation
+Notes done by: 
+* Christopher Durr
+
+Also known as Landau's symbol
 
 f(x) = O(g(x))
 
 **Notation**|**Name**
 
-O(1)		Constant
+* O(1)		   Constant
 
-O(logn)		Logarithmic
+* O(logn)		Logarithmic
 
-O(log n^c)	Polylogorithmic
+* O(log n<sup>c</sup>)	Polylogorithmic
 
-O(n)		Linear
+* O(n)		   Linear
 
-O(n^2)		Quadratic
+* O(n<sup>2</sup>)		   Quadratic
 
-O(n^c)		Polynomial
+* O(n<sup>c</sup>)		   Polynomial
 
-O(c^n)		Exponential
+* O(c<sup>n</sup>)		   Exponential
 
 
-Note that O(c^n) grows faster than O (n^c)
+Note that O(c<sup>n</sup>)) grows faster than O (n<sup>c</sup>))
 
 * A function that grows faster than a power of n is **superpolynomial**
-* A function slower than C^n is **subexponential**
-* Integer Factorization is both superpolynomial and subexponential
+* A function slower than c<sup>n</sup>) is **subexponential**
+* e.g. Integer Factorization is both superpolynomial and subexponential
 
 When given multiple terms, use the term that grows the fastest
 
@@ -32,6 +36,7 @@ e.g. f(n) = 10logn + 5logn + 7n + 3n^2 + 6n^3
 Other Notation:
 
 **Theta** 
+
 f(n) = theta(g(n))
 * f(n) = O(g(n))
 * g(n) = O(f(n))
@@ -50,7 +55,9 @@ We are interested in the worst-case scenario. That is, T(n) <= c * F(n)
 Example:
 
 T(n) = 3n^2 + 5
-t(n) is O(n^2) because 3n^2 + 5 < 4n^2
+
+T(n) is O(n^2) because 3n^2 + 5 < 4n^2
+
 Therefore 4n^2 is worst case. 
 
 
