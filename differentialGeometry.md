@@ -136,6 +136,70 @@ Gaussian elimination gets us [1 0; 0 1] = [-72; 20] = s<sub>Q</sub>x
 
 The point of intersection Q is OP + s<sub>Q</sub>x, or [5,-1] + [-72, 144] = [-67, 143]
 
+**Two Lines in Space**
+
+Two lines in E<sup>3</sup> are skew if there is no plane a in E<sup>3</sup> containing both of them. Thus, the lines do not intersect.
+
+A = [PP'] If it has no obvious solution, then the lines do not intersect!
+
+**Two Planes**
+Assume we are given 
+
+a<sub>1</sub>x + b<sub>1</sub>y + c<sub>1</sub>z = d<sub>1</sub>
+
+a<sub>2</sub>x + b<sub>2</sub>y + c<sub>2</sub>z = d<sub>1</sub>2.
+
+Get a matrix [A|d]. If one of the variables is free (i.e. rank A = 2), it can be used as a paramater representing the line of intersection
+
+If rank A = 1 then they are either parallel planes or both equations determine the same plane. 
+
+**Example**
+Assume two planes are given by the equation
+x − y + 2z = 1
+
+2x + y − 2z = 2
+
+This reduces to 
+
+1 0 0 | 1
+0 1 -2 | 0
+
+Yielding the solution [x,y,z] = [1, 2t,t] = [1,0,0] + [0,2,1]t
+
+This is a parametrization of the line l where plane 1 and plane 2 intersect.
+
+**A line and a plane**
+
+If the plane α is given by a linear equation ax + by + cz = d insert the components of parametrization of line l into that equation and obtain a single linear equation in the variable t. A solution t of the latter inserted into the
+parametrization for l yields the vector. 
+
+#Chapter 3: Orthogonal projections, distances, and angles
+
+We use projections in particular to define and calculate distances and angles
+
+
+Orthogonal projection of vector x onto span(y) is:
+
+p = (x*y/y*y)y
+
+Vector p is parallel to y and has length |x|cos(u), where us is the angle between x and y. 
+
+**Projection of point on line**
+
+Point + orthogonal projection
+
+**Projection of a point on a plane**
+
+p = (PR · n)/(n · n)n
+
+Coordinate R + p
+
+
+
+
+
+
+
 
 
 
