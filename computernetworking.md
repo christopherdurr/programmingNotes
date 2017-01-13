@@ -87,6 +87,31 @@ Two types of Physical Mediums:
 *   **Geostationary Satellite**: Reamin above the same spot on the earth
 *   **Low-earth Orbiting (LEO) Satellite**: Don't permanently remain above one spot. They rotate around the earth. 
 
+## 1.3
 
+Packet Switches use **store-and-forward** transmission. This means they must receive the entire packet before it can begin to transmit the data on the outbound link. This is what causes "buffering"
+
+At L/R seconds,the entire packet has been transmitted. Total delay is 2L/R. 
+
+N(L/R)
+
+**Output Buffer/Output Queue**: Stores packets that the router is about to send into that link. 
+
+Packets suffer **queueing delays**, which are variable and depend on level of congestion in network. 
+
+Every router has a **Forwarding Table** that maps destination addresses to the router's outbound links. Routers have **routing protocols** that are used to automatically set the forwarding tables. 
+
+How data moves through a network of links and switches:
+
+1. **Circuit Switching**: The resources needed along a path are reserved for the duration of the communication between end systems
+2. **Packet Switching**: Resources are not reserved, and we have to wait for access to a communication link
+
+For circuit switching, when two hosts want to communicate the network establishes an **end-to-end connection** between two hosts. 
+
+Circuits are implemented by:
+* **Frequency-Division Multiplexing (FDM)**: The link dedicates a frequency band for each connection. The width of the band is called *bandwidth*
+* **Time-division multiplexing (TDM)**: Time is divided into fixed durations
+
+The problem with circuit switching is that it is wasteful because dedicated circuits are idle during **silent periods**
 
 
