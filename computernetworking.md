@@ -37,3 +37,56 @@ the Internet infrastructure to deliver data to a specific destination program ru
 two or more communicating entities
 
 ## 1.2
+
+Host
+
+* **Client**: Desktops and Mobile PCs
+* **Server**: Store and distribute webpages, stream video, relay email etc. 
+
+Many servers reside in **Data Centers**, each having more than thousands of servers
+
+Access Network: Network that connects and end system to the first router ("edge router")
+
+If downstream and upstream rates are different, access is "asymmetric"
+
+**Cable Internet Access**: Uses cable television existing infrastructure
+
+Cable internet access requires cable modems, which is an external device, connecting to the home PC through an ethernet port. If multiple people download/upload at the same time, the upstream and downstream rate will be lower than normal. 
+
+**Fiber To The Home (FTTH)**: Provide an optical fiber path from the CO directly to the home. 
+
+Two optical distribution Network Architectures
+
+1. Active Optical Networks (AON): Switched Ethernet
+2. Passive Optical Networks (PON): Verizon's FIOS Service
+
+PON Explained
+
+Each home has an Optical Network Terminator (ONT) which is connected to a neighborhood splitter. 
+
+The splitter combines the homes onto a single optical fiber, which connects to an Optical Line Terminator (OLT) in the CO. A home router connects to the ONT. 
+
+Local Area Networks (LAN) are used in university and corporate settings. Ethernet is the most prevalent LAN. End system users connect to the Ethernet Switch, which then connects to the larger internet
+
+Wireless LAN (WiFi)
+
+3G: Provides Packet-switched WAN speeds of 1Mbps. 
+
+**Physical Medium**: What bits are sent across. 
+
+Two types of Physical Mediums:
+
+1. **Guided Media**: Data travels on a solid medium, such as a fiber-optic cable or a coaxial cable
+2. **Unguided Media**: Data travels in the atmosphere and in outer space, such as wireless LAN or a digital satellite channel
+
+* **Unshielded Twisted Pair (UTP)**: Most common guided transmission medium. Used for LAN. 
+* **Coaxial Cable**: Used in cable TV systems. It is a **Shared Medium**, a medium that serves more than one user at a time. 
+* **Fiber Optics**: Can support tremendous bit rates. 
+* Terrestrial Radio Channel: Require no physical wires to be installed, can penetrate walls, and can carry a signal over long distances 
+* Satellite Radio Channel
+*   **Geostationary Satellite**: Reamin above the same spot on the earth
+*   **Low-earth Orbiting (LEO) Satellite**: Don't permanently remain above one spot. They rotate around the earth. 
+
+
+
+
