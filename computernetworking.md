@@ -114,4 +114,21 @@ Circuits are implemented by:
 
 The problem with circuit switching is that it is wasteful because dedicated circuits are idle during **silent periods**
 
+Point of Presence (**POP**): A group of one or more routers (at the same location) in the provider’s network where customer ISPs can connect into the provider ISP
 
+Internet Exchange Point (**IXP**): A meeting point where multiple ISPs can peer together
+
+As a packet travels from host to host, it suffers from several delays:
+
+1. Nodal Processing Delay: The time required to examine a packet's header and determine where to direct the packet
+2. Queueing Delay: Happens as a packet waits to be transmitted on a link
+3. Transmission Delay: The amount of time required to push (that is, transmit) all of the packet’s bits into the link. 
+4. Propagation Delay: The time required to propagate from the beginning of the link to router B. It depends on the physical medium of the link 
+
+Transmission vs. Propagation delays: Transmission delays are a function of the packet's length and the transmission rate of the link. Propagation delays are a function of the distance between two routers
+
+d<sub>nodal</sub> = d<sub>proc</sub> + d<sub>queue</sub> + d<sub>trans</sub> + d<sub>prop</sub>
+
+Design your system so that the traffic intensity is no greater than 1!
+
+When a packet comes and there is a full queue, the router will **drop** the packet and the packet will be **lost**
