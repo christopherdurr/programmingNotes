@@ -174,6 +174,18 @@ A packet has two types of fields:
 
 ## 1.6
 
+**botnet**: A network of thousands of compromised devices 
+
+A lot of malware is *self-replicating*, where once it infects a host it seeks entry into other hosts 
+
+Virus vs. Worm: Virus requires human interaction while worms can enter devices without explicit user interaction.
+
+**Packet Sniffer**: A packet receiver that records a copy of every packet that flies by. They are difficult to detect because they are passive. 
+
+Injecting a packet with a false source address is known as **IP spoofing**
+
+
+
 
 
 
