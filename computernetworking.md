@@ -184,8 +184,50 @@ Virus vs. Worm: Virus requires human interaction while worms can enter devices w
 
 Injecting a packet with a false source address is known as **IP spoofing**
 
+## Chapter 2: Application Layer
+
+Two main architectural paradigms:
+
+* **Client-server Architecture**: There is an always-on host, called the *server*, which services requests to its *clients*. Also has a fixed, well known address. 
+* **P2P Architecture**: Minimal reliance on servers. Direct communication between pairs of hosts
+
+Applications can have hybrid architectures. 
+
+One of the advantages of P2P architecture is its *self-scalability*. 
+
+Several challenges for P2P architecture:
+
+1. Not ISP Friendly
+2. Lack of security 
+3. Convincing users to volunteer bandwidth to the application
+
+A **process** is a program running in an end system. Processes communicate with each other by sending **messages** across the network. 
+
+For the internet, the browser is the *client process* and the web server is the *server process*
+
+A process sends messages through a **socket**, also referred to as the **application programming interface** between the application and the network. 
+
+There are four possible services that a transport-layer protocol can solve:
+
+1. **Reliable Data Transfer**. If not a big deal, then the application is *loss-tolerant*
+2. **Throughput**. *bandwidth-sensitive* applications require throughput. *Elastic* applications can use as much throughput as available
+3. **Timing**: Useful for real-time interactive applications. 
+4. **Security**: Encrypt all data in the sending process. 
+
+Two available transport protocols are UDP and TCP. 
+
+TCP is a *connection-oriented service*. It also has a congestion-control mechanism. 
+
+UDP is *connectionless*, and there's no guarantee the message will reach the receiving process.  
 
 
+**HyperTextTransfer Protocol (HTTP)**: The web's application layer protocol. 
+
+**Non-persistent connection**: Each TCP connection is closed after the server sends the object
+
+**Persistent Connection**: Stays on the same TCP connection even after sending object. 
+
+First-line of an HTTP request message is the **request line**. Subsequent fields are the **header lines**. 
 
 
 
