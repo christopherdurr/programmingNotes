@@ -132,3 +132,49 @@ d<sub>nodal</sub> = d<sub>proc</sub> + d<sub>queue</sub> + d<sub>trans</sub> + d
 Design your system so that the traffic intensity is no greater than 1!
 
 When a packet comes and there is a full queue, the router will **drop** the packet and the packet will be **lost**
+
+## 1.5
+
+Each protocol belongs to one of the **layers**. 
+
+The **service** that a layer offers to a layer above is referred to as the **service model** of a layer. 
+
+Layering provides a structured way to discuss system components and makes it easy to update system components. 
+
+Several drawbacks to layer:
+
+* one layer may duplicate lower-layer functionality
+* functionality at one layer may need information (e.g. a timestamp value) that is present only in another layer
+
+A **protocol stack** are the protocols of various layers. 
+
+**Message**: Packet of information at the application layer 
+
+**Segment**: Transport layer packet
+
+**Datagrams**: Network-Layer packets
+
+**Frames**: Link-layer packets
+
+The OSI (Open systems interconnection) Model
+
+7 layers of the OSI model:
+
+1. Application Layer
+2. Presentation Layer
+3. Session Layer
+4. Transport Layer
+5. Network Layer
+6. Data link layer
+7. Physical laye
+
+A packet has two types of fields:
+* Header fields
+* Payload fields: Typically a packet from the layer above
+
+## 1.6
+
+
+
+
+
