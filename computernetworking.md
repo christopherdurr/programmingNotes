@@ -227,7 +227,36 @@ UDP is *connectionless*, and there's no guarantee the message will reach the rec
 
 **Persistent Connection**: Stays on the same TCP connection even after sending object. 
 
-First-line of an HTTP request message is the **request line**. Subsequent fields are the **header lines**. 
+First-line of an HTTP request message is the **request line**. Subsequent fields are the **header lines**.
+
+Response message has 3 sections:
+* **Status Line**
+* **Six Header Lines**
+* **Entity Body**: The meat of the message
+
+List of status codes:
+
+* 200 OK: Request succeeded and the information is returned in the response
+* 301 Moved Permanently: Requested object has been permanently moved; the new URL is specified in Location: header of the response message.
+* 400 Bad Request: a generic error code indicating that the request could not be understood by the server.
+* 404 Not Found: The requested document does not exist on this server
+* 505 HTTP Version not supported: The requested HTTP protocol version is not supported by the server
+
+Cookies can be used to identify a user. 
+
+**Web Cache/Proxy Server**: A network entity that satisfies HTTP requests on behalf of an origin Web server. 
+
+A cache is both a server and a client at the same time. It can reduce traffic and costs and improve performance of applications. 
+
+Traffic intensity: (requests/second) x (length of request)/ speed of connection
+
+Hit rates: Fraction of requests satisfied by cache
+
+**Content Distribution Network (CDN)**: Installs geographically distributed caches throughout the internet
+
+**Conditional GET**: Request message uses GET method and request message uses *if-modified-since* header line. 
+
+FTP uses two parallel connections to transfer a file, a **control connection** and a **data connection**
 
 
 
