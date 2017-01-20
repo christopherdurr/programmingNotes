@@ -300,6 +300,97 @@ There are several popular mail access protocols, including:
 * **Internet Mail Access Protocol (IMAP)**: Many more features than POP3. Create and search folders
 * HTTP
 
+**Hostname**: hostnames provide little, if any, information about
+the location within the Internet of the host
+
+**Domain Name System (DNS)**: translates hostnames to IP addresses 
+
+**Host aliasing**: A host with a complicated hostname can have one or more alias
+names, original name is the **canonical name**
+
+**Mail Server Aliasing**: Mail addresses that are mnemonic
+
+**Load Distribution**: DNS performs this. Busy sites are replicated on multiple servers 
+
+Centralized Design Issues:
+
+* Single point of failure. 
+* Traffic Volume
+* Distant Centralized Database
+* Maintenance
+* Non-scalable
+
+There are 3 classes of DNS Servers:
+ 
+* **Root DNS Servers**: There are 13 root DNS servers, most of which are in the U.S. 
+* **Top level Domain (TLD) Servers**: Responsible for top level domains such as com, net, edu
+* **Authorative DNS Servers**: An organization’s authoritative DNS server houses these DNS records
+
+There is another DNS server called **Local DNS Server**. Each
+ISP—such as a university, an academic department, an employee’s company, or a
+residential ISP—has a local DNS server 
+
+DNS extensively exploits **DNS Caching** in order to improve
+the delay performance and to reduce the number of DNS messages ricocheting around the internet. 
+
+The DNS Server store **Resource Records (RR)**
+
+A resource record is a four-tuple that contains the following fields:
+(Name, Value, Type, TTL)
+
+Semantics of a DNS message:
+
+* First 12 bytes is the *header section*
+* The *question section* contains information about the query that is being made. 
+* the *answer section* contains the resource records for the name that was originally queried.
+* The *authority section* contains records of other authoritative servers
+* The *additional section* contains other helpful records.
+
+**nslookup**: Can be used to send a DNS query to any DNS server. 
+
+**registrar**: Commercial entity that verifies the uniqueness of the domain name
+
+## Torrenting
+
+The collection of all peers participating in the distribution of a particular
+file is called a *torrent*. Each torrent has an infrastructure node called a *tracker*.
+When a peer joins a torrent, it registers itself with the tracker and periodically
+informs the tracker that it is still in the torrent.
+
+**rarest chunks**: get more quickly redistributed, aiming to
+(roughly) equalize the numbers of copies of each chunk in the torrent
+
+**unchoked**: The client should not attempt to send requests for blocks, and it should consider all pending (unanswered) requests to be discarded by the remote peer.
+
+**distributed hash table (DHT)**: A database is straightforward with a client-server architecture that
+stores all the (key, value) pairs in one central server. 
+
+Any peer will also be allowed to insert new key-value pairs into the
+database.
+
+This circular arrangement of the peers is a special case of an **overlay
+network**. In an overlay network, the peers form an abstract logical network which
+resides above the “underlay” computer network consisting of physical links, routers,
+and hosts
+
+In designing a DHT, there is tradeoff between the number of neighbors each
+peer has to track and the number of messages that the DHT needs to send to resolve a
+single query. 
+
+Each peer tracks all other peers *(mesh overlay)*
+
+With a *circular DHT*, each peer is only aware of two peers, but N/2 messages are
+sent on average for each query
+
+There are two types of network applications:
+
+1. An implementation whose operation is specified in a protocol standard (open)
+2. Proprietary network application
+
+Because the code does not implement an open protocol, other independent developers will not be able to
+develop code that interoperates with the application
+
+
 
 
 
