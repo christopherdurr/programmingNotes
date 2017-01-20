@@ -258,6 +258,48 @@ Hit rates: Fraction of requests satisfied by cache
 
 FTP uses two parallel connections to transfer a file, a **control connection** and a **data connection**
 
+ Because FTP uses a separate control connection, FTP is
+said to send its control information **out-of-band**
+
+ HTTP is said to send its control information **in-band**
+ 
+ With FTP, the control connection
+remains open throughout the duration of the user session, but a new data connection
+is created for each file transferred within a session
+
+The FTP server must associate the control connection with a specific user account,
+
+Commonly used FTP commands:
+
+* USER username: sends user identification to the server
+* PASS password: sends password to server
+* LIST: List all the files in the current directory
+* RETR filename: Get a file (download) from current directory
+* STOR filename: Used to store a file (upload) into the current directory 
+
+An internet mail system has three major components: 
+
+* User Agents
+* Mail Servers
+* Simple Mail Transfer Protocol (SMTP)
+
+SMTP has several restrictions. For example, it restricts the body of an email message to 7-bit ASCII
+
+SMTP can count on the reliable data transfer service of TCP to get the message
+to the server without error
+
+HTTP vs SMTP:
+
+HTTP is a **pull protocol** -- Someone loads information on a web server
+
+SMTP is a **push protocol** -- The mail server pushes the file to receiving mail server
+
+There are several popular mail access protocols, including:
+
+* **Post office protocol -- version 3 (POP3)**: Simple protocol, limited functionality. 
+* **Internet Mail Access Protocol (IMAP)**: Many more features than POP3. Create and search folders
+* HTTP
+
 
 
 
